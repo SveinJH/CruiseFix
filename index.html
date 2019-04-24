@@ -238,7 +238,7 @@
             </div>
             <div class="row route-section">
                 <div class="col span-1-of-2">
-                    <img src="resources/img/lofoten.jpg" alt="Skandinavia kart" class="route__img">        
+                    <img src="resources/img/travel-3.jpg" alt="Skandinavia kart" class="route__img">        
                 </div>
                 <div class="col span-1-of-2">
                     <h3 class="route__heading">Skandinavia</h3>
@@ -256,13 +256,13 @@
                     <p class="route__text">Denne ruten tar deg gjennom alle de vidunderlige storbyene s&oslash;r i Europa. Reisen starter i Athen, og leder videre mot Venezia. Deretter blir noen rolige dager på sj&oslash;en mens turen g&aring;r mot Napoli, etterfulgt av Roma og deretter slutter turen i Monaco.</p>
                 </div>
                 <div class="col span-1-of-2">
-                    <img src="resources/img/venice.jpg" alt="Skandinavia kart" class="route__img">        
+                    <img src="resources/img/travel-1.jpg" alt="Skandinavia kart" class="route__img">        
                 </div>
             </div>
 
             <div class="row route-section">
                 <div class="col span-1-of-2">
-                    <img src="resources/img/spain.jpg" alt="Skandinavia kart" class="route__img">        
+                    <img src="resources/img/travel-2.jpg" alt="Skandinavia kart" class="route__img">        
                 </div>
                 <div class="col span-1-of-2">
                     <h3 class="route__heading">Spania</h3>
@@ -341,19 +341,19 @@
                 <form method="post" action="#" name="orderForm" class="order__form">
                     <div class="row order__row">
                         <div class="col span-1-of-4">
-                            <label for="firstName">Fornavn</label>
+                            <label for="firstName">Fornavn<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
                             <input type="text" name="firstName" id="firstName" placeholder="Fornavn" required>
                         </div>
                         <div class="col span-1-of-4">
-                            <label for="cruiseShip">Cruiseskip</label>
+                            <label for="travel">Reise<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
-                            <select name="cruiseShip" id="cruiseShip">
-                                <option value="celebritySilhouette" selected>Celebrity Silhouette</option>
-                                <option value="crownPrincess">Crown Princess</option>
-                                <option value="seabournQuest">Seabourn Quest</option>
+                            <select name="travel" id="travel">
+                                <option value="scandinavia" selected>Skandinavia</option>
+                                <option value="southEurope">S&oslash;r-Europa</option>
+                                <option value="spain">Spania</option>
                             </select>
                         </div>
                     </div>
@@ -361,19 +361,19 @@
 
                     <div class="row order__row rowwithimg">
                         <div class="col span-1-of-4">
-                            <label for="lastName">Etternavn</label>
+                            <label for="lastName">Etternavn<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
                             <input type="text" name="lastName" id="lastName" placeholder="Etternavn" required>
                         </div>
                         <div class="col span-2-of-4">
-                            <img src="resources/img/cruiseship-2.jpg" alt="Seabourn Quest" class="order__img--selected">
+                            <img src="resources/img/travel-3.jpg" alt="Bilde av valgt reise" class="order__img--selected">
                         </div>
                     </div>
 
                     <div class="row order__row">
                         <div class="col span-1-of-4">
-                            <label for="firstName">E-post</label>
+                            <label for="email">E-post<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
                             <input type="email" name="email" id="email" placeholder="E-post" required>
@@ -382,7 +382,7 @@
 
                     <div class="row order__row">
                         <div class="col span-1-of-4">
-                            <label for="firstName">Telefon</label>
+                            <label for="telephone">Telefon<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
                             <input type="tel" name="telephone" id="telephone" placeholder="Telefonnummer" required>
@@ -392,29 +392,64 @@
 
                     <div class="row order__row">
                         <div class="col span-1-of-4">
-                            <label for="firstName">Adresse</label>
+                            <label for="address">Adresse<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
                             <input type="text" name="address" id="address" placeholder="Adresse" required>
                         </div>
+                        <div class="col span-1-of-4">
+                            <label for="">Antall reisende<span class="required">*</span></label>
+                        </div>
+                        <div class="col span-1-of-4">
+                            <input type="number" name="peopleNumber" id="peopleNumber" placeholder="Antall personer" required>
+                        </div>
                     </div>
 
                     <div class="row order__row">
                         <div class="col span-1-of-4">
-                            <label for="firstName">Poststed</label>
+                            <label for="postPlace">Poststed<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
                             <input type="text" name="postPlace" id="postPlace" placeholder="Poststed" required>
                         </div>
+                        <div class="col span-1-of-4">
+                            <label for="cabin">Lugar<span class="required">*</span></label>
+                        </div>
+                        <div class="col span-1-of-4">
+                            <select name="cabin" id="cabin">
+                                <option value="standard" selected>Standard</option>
+                                <option value="juniorSuite">Junior Suite</option>
+                                <option value="masterSuite">Master Suite</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div class="row order__row">
                         <div class="col span-1-of-4">
-                            <label for="firstName">Postnummer</label>
+                            <label for="postNumber">Postnummer<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
                             <input type="text" name="postNumber" id="postNumber" placeholder="Postnummer" required>
                         </div>
+                    </div>
+
+                    <div class="row row__dates">
+                        <div class="col span-1-of-4">
+                            <label for="dateFrom">Fra dato<span class="required">*</span></label>
+                        </div>
+                        <div class="col span-1-of-4">
+                            <input type="date" name="dateFrom" id="dateFrom" required>
+                        </div>
+                        <div class="col span-1-of-4">
+                            <label for="dateTo">Til dato<span class="required">*</span></label>
+                        </div>
+                        <div class="col span-1-of-4">
+                            <input type="date" name="dateTo" id="dateTo" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <p class=""></p>
                     </div>
 
                     <div class="row">
