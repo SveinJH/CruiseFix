@@ -435,28 +435,88 @@
 
                     <div class="row row__dates">
                         <div class="col span-1-of-4">
-                            <label for="dateFrom">Fra dato<span class="required">*</span></label>
+                            <label for="days">Antall reised&oslash;gn<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
-                            <input type="date" name="dateFrom" id="dateFrom" required>
+                            <select name="days" id="days" required>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+
+                            </select>
                         </div>
                         <div class="col span-1-of-4">
-                            <label for="dateTo">Til dato<span class="required">*</span></label>
+                            <label for="month">M&aring;ned<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
-                            <input type="date" name="dateTo" id="dateTo" required>
+                            <select name="month" id="month" required>
+                                <option value="1">Januar</option>
+                                <option value="2">Februar</option>
+                                <option value="3">Mars</option>
+                                <option value="4">April</option>
+                                <option value="5">Mai</option>
+                                <option value="6">Juni</option>
+                                <option value="7">Juli</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">Oktober</option>
+                                <option value="11">November</option>
+                                <option value="12">Desember</option>
+                            </select>
                         </div>
                     </div>
 
                     <div class="row">
-                        <p class=""></p>
+                        <p class="order__member">Hvis du er medlem i SAS Eurobonus eller Choice Club kan du gi<br/>oss ditt medlemsnummer for <span class="important">20%</span> rabatt på din ordre!</p>
+
+                        <input type="text" name="memberNumber" id="memberNumber" placeholder="Medlemsnummer">
+                    </div>
+
+                    <div class="row">
+                        <h3 class="order__price">Pris: <span class="calculatedPrice">100</span><span class="kroner">KR</span></h3>
                     </div>
 
                     <div class="row">
                         <input type="submit" id="orderButton" name="orderButton" value="Bestill"> 
                     </div>
-                    
                 </form>
+            </div>
+        </section>
+        
+        <section class="section-footer">
+            <div class="row">
+                <ul class="footer__bar">
+                    <li class="footer__bar-element"><a href="#">Om oss</a></li>
+                    <li class="footer__bar-element"><a href="#">Kontakt</a></li>
+                    <li class="footer__bar-element"><a href="#">Bestill</a></li>
+                </ul>
+                <ul class="social-links">
+                    <li class="social-links__element"><a href="#">
+                        <i class="ion-logo-twitter logo--twitter"></i>
+                    </a></li>
+                    <li class="social-links__element"><a href="#">
+                        <i class="ion-logo-facebook logo--facebook"></i>
+                    </a></li>
+                    <li class="social-links__element"><a href="#">
+                        <i class="ion-logo-instagram logo--instagram"></i>
+                    </a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="row">
+                <p class="footer__copyright">Copyright © 2019 laget av Svein Jakob H&oslash;ie og Marcus Sevaldsen</p>
             </div>
         </section>
 

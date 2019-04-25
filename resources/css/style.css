@@ -574,15 +574,93 @@ select {
     width: 86%;
 }
 
+#memberNumber {
+    margin: 0 36%;
+    width: 28%;
+}
+
 .required {
     color: #ff0000;
     font-size: 22px;
     font-weight: 500;
 }
 
+.order__member {
+    margin: 30px 0 10px 0;
+    text-align: center;
+    line-height: 140%;
+    font-size: 85%;
+}
+
+.important {
+    font-size: 125%;
+    font-weight: 400;
+    color: #0767b6;
+}
+
+.order__price {
+    display: inline-block;
+    letter-spacing: 2px;
+    margin: 70px 0 8px 50%;
+    transform: translateX(-50%);
+    font-size: 160%;
+}
+
+.calculatedPrice {
+    margin-left: 10px;
+    font-weight: 400;
+    color: #0767b6;
+}
+
+.kroner {
+    color: #363636;
+    margin-left: 3px;
+    font-size: 80%;
+}
 
 
 
+
+/*---------------------*/
+/* FOOTER */
+/*---------------------*/
+
+.section-footer {
+    background-color: #3d3d3d;
+    height: 200px;
+}
+
+.footer__bar {
+    margin-top: 40px;
+    float: left;
+    list-style: none;
+}
+
+.footer__bar-element {
+    display: inline-block;
+    font-size: 110%;
+    margin-right: 20px;
+}
+
+.social-links {
+    margin-top: 40px;
+    float: right;
+    list-style: none;
+}
+
+.social-links__element {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 200%;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 1px;
+    color: gray;
+    font-size: 95%;
+}
 
 
 
