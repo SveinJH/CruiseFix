@@ -2,12 +2,14 @@
 <html lang="no">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CruiseFix</title>
 
         <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
     </head>
     <body>
         
@@ -17,12 +19,10 @@
                 <div class="row">
                     <img src="resources/img/cruiseFix.PNG" class="logo">
                     <ul class="main-nav">
-                        <li><a href="#">Hvordan det virker</a></li>
-                        <li><a href="#">V&aring;re skip</a></li>
-                        <li><a href="#">Aktiviteter</a></li>
-                        <li><a href="#">Reiseruter</a></li>
-                        <li><a href="#">Bestill</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li class="js-scroll-to-hiw"><a href="#">Hvordan det virker</a></li>
+                        <li class="js-scroll-to-order"><a href="#">Bestill</a></li>
+                        <li class="js-scroll-to-about"><a href="#">Om oss</a></li>
+                        <li class="js-scroll-to-contact"><a href="#">Kontakt</a></li>
                         
                     </ul>
                 </div>
@@ -30,13 +30,13 @@
             
             <div class="header-box">
                 <h1>Lysten p&aring; nye eventyr?<br>La oss ordne din drømmereise.</h1>
-                <a class="btn btn-full" href="#">Bestill n&aring;</a>
-                <a class="btn btn-ghost" href="#">Les mer</a>
+                <a class="btn btn-full js-scroll-to-order" href="#">Bestill n&aring;</a>
+                <a class="btn btn-ghost js-scroll-to-hiw" href="#">Les mer</a>
             </div>
             
         </header>
         
-        <section class="section-hiw">
+        <section class="section-hiw js-section-hiw">
             <div class="row hiw-header">
                 <h2>Hvordan det virker</h2>
                 <p class="intro-text">Velkommen til CruiseFix, reiseplanleggeren for din cruiseferie. Vi er et team p&aring; over 50 ansatte<br>som &oslash;nsker at <strong>du</strong> skal f&aring; oppleve hvordan det er &aring; dra p&aring; en skikkelig cruiseferie.</p>
@@ -73,7 +73,7 @@
             </div>
             <div class="row">
                 <div class="col span-1-of-3 ships">
-                    <h3>Seabourn Quest</h3>
+                    <h3 class="ship__name">Seabourn Quest</h3>
                     <img src="resources/img/cruiseship-1.jpg" alt="Cruiseship 1" class="ship-img">
                     <div class="ships-feature">
                         <i class="ion-ios-people icon-small"></i>
@@ -87,11 +87,11 @@
                         <i class="ion-ios-star icon-small"></i>
                         4,6 / 5
                     </div>
-                    <a href="#" class="btn btn-ghost">Book n&aring;</a>
+                    <a href="#" class="btn btn-ghost js-scroll-to-order">Book n&aring;</a>
                 </div>
                 
                 <div class="col span-1-of-3 ships">
-                    <h3>Crown Princess</h3>
+                    <h3 class="ship__name">Crown Princess</h3>
                     <img src="resources/img/cruiseship-3.jpg" alt="Cruiseship 3" class="ship-img">
                     <div class="ships-feature">
                         <i class="ion-ios-people icon-small"></i>
@@ -105,11 +105,11 @@
                         <i class="ion-ios-star icon-small"></i>
                         4,9 / 5
                     </div>
-                    <a href="#" class="btn btn-ghost">Book n&aring;</a>
+                    <a href="#" class="btn btn-ghost js-scroll-to-order">Book n&aring;</a>
                 </div>
                 
                 <div class="col span-1-of-3 ships">
-                    <h3>Celebrity Silhouette</h3>
+                    <h3 class="ship__name">Celebrity Silhouette</h3>
                     <img src="resources/img/cruiseship-2.jpg" alt="Cruiseship 2" class="ship-img">
                     <div class="ships-feature">
                         <i class="ion-ios-people icon-small"></i>
@@ -123,7 +123,7 @@
                         <i class="ion-ios-star icon-small"></i>
                         4,7 / 5
                     </div>
-                    <a href="#" class="btn btn-ghost">Book n&aring;</a>
+                    <a href="#" class="btn btn-ghost js-scroll-to-order">Book n&aring;</a>
                 </div>
             </div>
         </section>
@@ -333,7 +333,7 @@
             </div>
         </section>
 
-        <section class="section-order">
+        <section class="section-order js-section-order">
             <div class="row">
                 <h2 class="order__heading">Bestill n&aring;</h2>
             </div>
@@ -351,9 +351,9 @@
                         </div>
                         <div class="col span-1-of-4">
                             <select name="travel" id="travel">
-                                <option value="scandinavia" selected>Skandinavia</option>
-                                <option value="southEurope">S&oslash;r-Europa</option>
-                                <option value="spain">Spania</option>
+                                <option value="1" selected>Skandinavia</option>
+                                <option value="1.2">S&oslash;r-Europa</option>
+                                <option value="1.1">Spania</option>
                             </select>
                         </div>
                     </div>
@@ -417,9 +417,9 @@
                         </div>
                         <div class="col span-1-of-4">
                             <select name="cabin" id="cabin">
-                                <option value="standard" selected>Standard</option>
-                                <option value="juniorSuite">Junior Suite</option>
-                                <option value="masterSuite">Master Suite</option>
+                                <option value="1" selected>Standard</option>
+                                <option value="1.25">Junior Suite</option>
+                                <option value="1.5">Master Suite</option>
                             </select>
                         </div>
                     </div>
@@ -498,7 +498,7 @@
             </div>
         </section>
         
-        <section class="section-about">
+        <section class="section-about js-section-about">
             <div class="row">
                 <h2 class="about__heading">Om oss</h2>
             </div>
@@ -517,7 +517,7 @@
             </div>
         </section>
 
-        <section class="section-contact">
+        <section class="section-contact js-section-contact">
             <div class="row">
                 <h2 class="contact__heading">Vi vil gjerne h&oslash;re fra deg</h2>
             </div>
@@ -532,21 +532,22 @@
                             <input type="email" name="emailLabel" id="emailLabel" placeholder="E-post" required>
 
                             <label for="messageLabel">Melding:</label>
-                            <textarea name="messageLabel" placeholder="Din melding" required></textarea>
+                            <textarea name="messageLabel" placeholder="Din melding" required id="messageLabel"></textarea>
+
+                            <input type="submit" id="sendButton" name="sendButton" value="Send"> 
                         </form>
                     </div>
                     <div class="contact__box-2">
-
+                        <i class="ion-ios-mail icon-big"></i>
+                        <p class="mail">contact@cruisefix.no</p>
+                        <i class="ion-ios-call icon-big"></i>
+                        <p class="phone">405 04 050</p>
                     </div>
             </div>
         </section>
 
 
 
-
-
-
-        <!--
         <section class="section-footer">
             <div class="row">
                 <ul class="footer__bar">
@@ -572,9 +573,9 @@
                 <p class="footer__copyright">Copyright © 2019 laget av Svein Jakob H&oslash;ie og Marcus Sevaldsen</p>
             </div>
         </section>
-        -->
-
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="resources/js/script.js"></script>
     </body>
 </html>
 

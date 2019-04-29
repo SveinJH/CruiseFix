@@ -61,7 +61,7 @@ input[type=submit] {
     display: inline-block;
     padding: 7px 20px;
     border: 2px solid #2980b9;
-    border-radius: 200px;
+    border-radius: 100px;
     margin-top: 5px;
     box-shadow: 0 3px 2px #1a1a1a;
     font-weight: 400;
@@ -302,7 +302,7 @@ header {
     border-radius: 5px;
 }
 
-.ships h3 {
+.ship__name {
     text-align: center;
     font-size: 130%;
     margin-bottom: 10px;
@@ -328,12 +328,6 @@ header {
     margin-left: 32%;
     margin-right: 32%;
 }
-
-.large-row {
-    margin-right: 1%;
-    margin-left: 1%;
-}
-
 
 
 /*---------------------*/
@@ -566,7 +560,7 @@ input[type=email],
 input[type=tel],
 input[type=number],
 input[type=date],
-textarea
+textarea,
 select {
     font-family: 'Lato';
     letter-spacing: 1px;
@@ -647,9 +641,9 @@ select {
 
 .about__img {
     position: absolute;
-    width: 110%;
+    width: 100%;
     top: -50px;
-    left: 30%;
+    left: 10%;
 }
 .about__heading--secondary {
     text-align: center;
@@ -687,7 +681,7 @@ select {
 .section-contact {
     margin-top: 75px;
     background-color: #f7f7f7;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .contact__heading {
@@ -695,10 +689,10 @@ select {
 }
 
 .contact__box {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: row;
-    margin-left: 15%;
+    margin-left: 20%;
     box-shadow: 0 10px 34px rgba(0, 0, 0, .7);
     border-radius: 15px;
 }
@@ -708,7 +702,7 @@ select {
     border-bottom-left-radius: 5px;
     height: 500px;
     width: 66%;
-    background-color: #5faee3;
+    background-color: #429fde;
 }
 
 .contact__box-1 form {
@@ -722,28 +716,58 @@ select {
     border-bottom-right-radius: 5px;
     height: 500px;
     width: 34%;
-    background-color: #217dbb;
+    background-color: #2487c9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 120%;
+    letter-spacing: 3px;
+}
+
+.contact__box-2 i {
+    color: #fff;
+    margin-top: 60px;
+
 }
 
 .contact__form label {
     display: block;
     margin-top: 50px;
+    margin-bottom: 5px;
 }
 
 #messageLabel {
 }
 
-#nameLabel, #emailLabel {
-    width: 35%;
+#nameLabel, #emailLabel, #messageLabel {
+    width: 70%;
     border-radius: 5px;
+    border: none;
+    transition: box-shadow .3s;
 }
 
-textarea {
+#nameLabel:focus, #emailLabel:focus,
+#messageLabel:focus {
+    outline: none;
+    box-shadow: 2px 6px 16px rgba(0, 0, 0, .5);
+}
+
+#messageLabel {
     height: 100px;
-    width: 50%;
     font-size: 17px;
     font-family: "Lato", sans-serif;
     letter-spacing: 1px;
+}
+
+#sendButton {
+    margin-top: 35px;
+    transition: all ease .3s;
+}
+
+#sendButton:hover,
+#sendButton:active {
+    color: white;
 }
 
 
@@ -756,7 +780,7 @@ textarea {
 
 .section-footer {
     background-color: #3d3d3d;
-    height: 200px;
+    height: 250px;
 }
 
 .footer__bar {
@@ -791,6 +815,20 @@ textarea {
     font-size: 95%;
 }
 
+.footer__bar-element a:link,
+.footer__bar-element a:visited {
+    color: #fff;
+    transition: color .2s;
+}
+
+.footer__bar-element a:hover,
+.footer__bar-element a:active {
+    color: rgb(163, 163, 163);
+}
+
+.logo--twitter { color: #55acee; }
+.logo--facebook { color: #3b5999; }
+.logo--instagram { color: #e4405f; }
 
 
 

@@ -1,0 +1,85 @@
+/*---------------------*/
+/* BIG TABLET TO 1200PX */
+/*---------------------*/
+
+@media only screen and (max-width: 1200px) {
+    .row {
+        padding: 0 2%;
+    }
+
+    .contact__box-2 {
+        font-size: 85%;
+    }
+
+    .ship__name {
+        font-size: 100%;
+    }
+
+    .btn:link,
+    .btn:visited,
+    input[type=submit] {
+        font-size: 71%;
+        padding: 7px 15px;
+        margin-top: 5px;
+    }
+}
+
+
+/*---------------------*/
+/* SMALL TABLET TO BIG TABLET */
+/*---------------------*/
+
+@media only screen and (max-width: 1023px) {
+    .row {
+        padding: 0 4%;
+        background-color: lightblue;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        font-size: 110%;
+    }
+
+    /*CONTACT*/
+    .contact__box {
+        flex-direction: column;
+    }
+
+    .contact__box-1 {
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
+    }
+
+    .contact__box-2 {
+        width: 100%;
+        height: 225px;
+        font-size: 65%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+    }
+
+    .contact__box-2 i {
+        margin-top: 10px;
+    }
+
+    /*SHIPS*/
+    .ships {
+        width: 50%;
+        margin-left: 25%;
+        height: 475px;
+    }
+
+    .ships:first-child {
+        margin-left: 25%;
+    }
+
+    .ship-img {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
