@@ -334,6 +334,11 @@
         margin-left: 35%;
     }
 
+    .memberButton {
+        width: 20%;
+        margin-left: 40%;
+    }
+
     /*ABOUT*/
     .about__img {
         position: inherit;
