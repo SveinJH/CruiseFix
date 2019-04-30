@@ -1,5 +1,6 @@
 $(document).ready(function() {
     
+    //STICKY NAVIGATION
     $(".js-section-hiw").waypoint(function(direction) {
         if(direction == 'down') {
             $('nav').addClass('sticky');
@@ -7,10 +8,12 @@ $(document).ready(function() {
             $('nav').removeClass('sticky');
         }
     }, {
-        offset: '60px;'
+        offset: '40px;'
     });
 
 
+
+    //SCROLL TO SECTIONS
     $('.js-scroll-to-hiw').click(function() {
         $('html, body').animate({scrollTop: $('.js-section-hiw').offset().top}, 1000);
     });
@@ -27,6 +30,25 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: $('.js-section-contact').offset().top}, 1650);
     });
 
+
+    //MOBILE NAVIGATION
+    $('.js-nav-icon').click(function() {
+        let nav = $('.js-main-nav');
+        let icon = $('.js-nav-icon i');
+
+        nav.slideToggle(250);
+        if(icon.hasClass('ion-ios-menu')) {
+            icon.addClass('ion-ios-close');
+            icon.removeClass('ion-ios-menu');
+        } else {
+            icon.removeClass('ion-ios-close');
+            icon.addClass('ion-ios-menu');
+        }
+    });
+
+
+    //ANIMATIONS ON SCROLL
+    
 
 
     //Calculate prices
