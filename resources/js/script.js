@@ -1,5 +1,16 @@
 $(document).ready(function() {
     
+    $(".js-section-hiw").waypoint(function(direction) {
+        if(direction == 'down') {
+            $('nav').addClass('sticky');
+        } else {
+            $('nav').removeClass('sticky');
+        }
+    }, {
+        offset: '60px;'
+    });
+
+
     $('.js-scroll-to-hiw').click(function() {
         $('html, body').animate({scrollTop: $('.js-section-hiw').offset().top}, 1000);
     });

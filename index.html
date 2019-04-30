@@ -18,20 +18,20 @@
             <nav>
                 <div class="row">
                     <img src="resources/img/cruiseFix.PNG" class="logo">
-                    <ul class="main-nav">
+                    <ul class="main-nav js-main-nav">
                         <li class="js-scroll-to-hiw"><a href="#">Hvordan det virker</a></li>
                         <li class="js-scroll-to-order"><a href="#">Bestill</a></li>
                         <li class="js-scroll-to-about"><a href="#">Om oss</a></li>
                         <li class="js-scroll-to-contact"><a href="#">Kontakt</a></li>
-                        
                     </ul>
+                    <a class="mobile-nav-icon js-nav-icon"><i class="ion-ios-menu"></i></a>
                 </div>
             </nav>
             
             <div class="header-box">
                 <h1>Lysten p&aring; nye eventyr?<br>La oss ordne din drømmereise.</h1>
-                <a class="btn btn-full js-scroll-to-order" href="#">Bestill n&aring;</a>
-                <a class="btn btn-ghost js-scroll-to-hiw" href="#">Les mer</a>
+                <a class="btn btn-full js-scroll-to-order btn-order" href="#">Bestill n&aring;</a>
+                <a class="btn btn-ghost js-scroll-to-hiw btn-readMore" href="#">Les mer</a>
             </div>
             
         </header>
@@ -43,26 +43,30 @@
             </div>
             
             <div class="row">
-                <div class="col span-2-of-3 steps-box">
-                    <div class="works-step">
-                        <div>1</div>
-                        <p class="step">F&oslash;rst velger du hvilket av v&aring;re cruiseskip du vil reise med,<br>og hvilken type lugar du &oslash;nsker.</p>
-                    </div>
-                    <div class="works-step">
-                        <div>2</div>
-                        <p class="step">Deretter velger du hvor og n&aring;r du &oslash;nsker &aring; begynne reisen din.</p>
-                    </div>
-                    <div class="works-step">
-                        <div>3</div>
-                        <p class="step">Vi ordner transport fra din hjemmeadresse helt frem til<br>cruiseshipet. Enklere blir det ikke.</p>
-                    </div>
-                    <div class="works-step">
-                        <div>4</div>
-                        <p class="step">M&oslash;t opp til angitt sted og tidspunkt, og nyt din skreddersydde<br>dr&oslash;mmeferie.</p>
+                <div class="col span-1-of-2">
+                    <div class="steps-box">
+                        <div class="works-step">
+                            <div>1</div>
+                            <p class="step">F&oslash;rst velger du hvilket av v&aring;re cruiseskip du vil reise med,<br>og hvilken type lugar du &oslash;nsker.</p>
+                        </div>
+                        <div class="works-step">
+                            <div>2</div>
+                            <p class="step">Deretter velger du hvor og n&aring;r du &oslash;nsker &aring; begynne reisen din.</p>
+                        </div>
+                        <div class="works-step">
+                            <div>3</div>
+                            <p class="step">Vi ordner transport fra din hjemmeadresse helt frem til<br>cruiseshipet. Enklere blir det ikke.</p>
+                        </div>
+                        <div class="works-step">
+                            <div>4</div>
+                            <p class="step">M&oslash;t opp til angitt sted og tidspunkt, og nyt din skreddersydde<br>dr&oslash;mmeferie.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col span-1-of-3 steps-box">
-                    <img src="resources/img/iphone_mockup.png" alt="iPhone Mockup" class="iphone-mockup">
+                <div class="col span-1-of-2">
+                    <div class="steps-box">
+                        <img src="resources/img/iphone_mockup.png" alt="iPhone Mockup" class="iphone-mockup">
+                    </div>
                 </div>
             </div>
         </section>
@@ -201,30 +205,30 @@
         
         <section class="section-activities">
             <div class="row">
-                <h2>Aktiviteter</h2>
+                <h2 class="activities__heading">Aktiviteter</h2>
                 <p class="activities-text">Ombord i v&aring;re skip finnes det aktiviteter for b&aring;de store og sm&aring;! Her er at par av tingene du kan finne p&aring; dersom du bestiller ferien din hos oss!</p>
 
             <div class="row">
-                <div class="col span-1-of-4">
+                <div class="col span-1-of-4 nutrition">
                     <i class="ion-ios-nutrition icon-big"></i>
                     <h3 class="activities__element-heading">Mat</h3>
                     <p class="activities__element-text">Alle v&aring;re cruiseskip har flotte resturanter med mat til enhver sjel! Alt fra asiatisk, indisk, meksikansk og thai, til de enkle burger og p&oslash;lsebodene for de som &oslash;nsker! </p>
                 </div>
                 
 
-                <div class="col span-1-of-4">
+                <div class="col span-1-of-4 water">
                     <i class="ion-ios-water icon-big"></i>
                     <h3 class="activities__element-heading">Bading</h3>
                     <p class="activities__element-text">Samtlige av v&aring;re cruiseskip har basseng som du kan nyte til alle d&oslash;gnets tider! Barnebasseng, jacuzzi og sv&oslash;mmebasseng, alt er tilrettelagt for deg!</p>
                 </div>
 
-                <div class="col span-1-of-4">
+                <div class="col span-1-of-4 fitness">
                     <i class="ion-ios-fitness icon-big"></i>
                     <h3 class="activities__element-heading">Trening</h3>
                     <p class="activities__element-text">Om du er redd for at du spiser for mye usunn mat, eller rett og slett bare har lyst til &aring; holde deg i form, har vi selvsagt treningsfasiliteter p&aring; alle cruiseskipene!</p>
                 </div>
 
-                <div class="col span-1-of-4">
+                <div class="col span-1-of-4 people">
                     <i class="ion-ios-people icon-big"></i>
                     <h3 class="activities__element-heading">Familie</h3>
                     <p class="activities__element-text">Vi arrangerer aktiviteter ombord for hele familien! Yoga, ansiktsmaling, bowling og masse mer! Hos oss vil du ikke f&aring; tid til &aring; kjede deg!</p>
@@ -401,7 +405,7 @@
                             <label for="">Antall reisende<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
-                            <input type="number" name="peopleNumber" id="peopleNumber" placeholder="Antall personer" required>
+                            <input type="number" name="peopleNumber" id="peopleNumber" placeholder="Reisende" required>
                         </div>
                     </div>
 
@@ -551,9 +555,9 @@
         <section class="section-footer">
             <div class="row">
                 <ul class="footer__bar">
-                    <li class="footer__bar-element"><a href="#">Om oss</a></li>
-                    <li class="footer__bar-element"><a href="#">Kontakt</a></li>
-                    <li class="footer__bar-element"><a href="#">Bestill</a></li>
+                    <li class="footer__bar-element js-scroll-to-about"><a href="#">Om oss</a></li>
+                    <li class="footer__bar-element js-scroll-to-contact"><a href="#">Kontakt</a></li>
+                    <li class="footer__bar-element js-scroll-to-order"><a href="#">Bestill</a></li>
                 </ul>
                 <ul class="social-links">
                     <li class="social-links__element"><a href="#">

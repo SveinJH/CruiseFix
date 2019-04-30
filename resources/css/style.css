@@ -16,6 +16,11 @@ html, body {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility; 
+    overflow-x: hidden;
+}
+
+section {
+	padding: 70px 0;
 }
 
 .clearfix {zoom: 1}
@@ -138,7 +143,6 @@ h1 {
 }
 
 h2 {
-    padding-top: 65px;
     text-align: center;
     font-size: 180%;
     letter-spacing: 2px;
@@ -219,6 +223,21 @@ header {
 }
 
 
+/*---------------------*/
+/* STICKY NAVIGATION */
+/*---------------------*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    box-shadow: 0 2px 2px #eaeaea;
+    z-index: 9999;
+}
+
+
 
 /*---------------------*/
 /* HOW IT WORKS */
@@ -226,14 +245,12 @@ header {
 
 .section-hiw {
     background-color: #f2f2f2;
-    padding-bottom: 60px;
-    box-shadow: 0px 2px 5px #ddd;
 }
 
 .hiw-header {
     height: 120px;
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 55px;
 }
 
 .intro-text {
@@ -242,7 +259,8 @@ header {
 }
 
 .steps-box:first-child {
-    display: inline-block;
+    display: block;
+    margin-left: 0;
 }
 
 .steps-box:last-child {
@@ -254,11 +272,9 @@ header {
     width: 80%;
     margin-left: 10%;
     height: auto;
-    display: inline-block;
 }
 
 .works-step {
-    margin-left: 15%;
     margin-top: 30px;
     line-height: 150%
 }
@@ -278,10 +294,6 @@ header {
 /*---------------------*/
 /* SHIPS */
 /*---------------------*/
-
-.section-ships {
-    padding-bottom: 150px;
-}
 
 .section-ships .row h2 {
     margin-bottom: 40px;
@@ -326,17 +338,12 @@ header {
     text-align: center;
     width: 36%;
     margin-left: 32%;
-    margin-right: 32%;
 }
 
 
 /*---------------------*/
 /* COLLAGE */
 /*---------------------*/
-
-.section-collage {
-    padding: 0;
-}
 
 .img-showcase {
     list-style: none;
@@ -376,7 +383,7 @@ header {
 /*---------------------*/
 
 .section-activities {
-    padding-bottom: 150px;
+    padding-top: 0;
 }
 
 .activities-text {
@@ -407,7 +414,6 @@ header {
 
 .section-routes {
     background-color: rgb(245, 245, 245);
-    padding-bottom: 30px;
 }
 
 .route-section {
@@ -456,7 +462,6 @@ header {
 /*---------------------*/
 
 .section-customers {
-    padding-bottom: 100px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("img/ocean.jpg");
     background-position: center;
     background-size: cover;
@@ -515,7 +520,6 @@ header {
 /*---------------------*/
 
 .section-order {
-    padding-bottom: 30px;
     background-color: rgb(247, 247, 247);
 }
 
@@ -627,10 +631,6 @@ select {
 /* ABOUT */
 /*---------------------*/
 
-.section-about {
-    padding-bottom: 50px;
-}
-
 .about__heading {
     margin-bottom: 70px;
 }
@@ -681,7 +681,6 @@ select {
 .section-contact {
     margin-top: 75px;
     background-color: #f7f7f7;
-    padding-bottom: 100px;
 }
 
 .contact__heading {
@@ -769,8 +768,6 @@ select {
 #sendButton:active {
     color: white;
 }
-
-
 
 
 
