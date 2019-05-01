@@ -189,6 +189,8 @@ function submitMessage() {
     $('#emailLabel').val('');
     $('#messageLabel').val('');
     alert("Your message has been sent! Thank you.");
+
+    //Return false to prevent page reload
     return false;
 }
 
@@ -196,6 +198,23 @@ function submitMessage() {
 //ORDER SUBMIT
 function submitForm() {
     $('#firstName').val('');
-    $('#emailLabel').val('');
-    $('#messageLabel').val('');
+    $('#lastName').val('');
+    $('#email').val('');
+    $('#telephone').val('');
+    $('#address').val('');
+    $('#peopleNumber').val('1');
+    $('#postPlace').val('');
+    $('#cabin').val('1');
+    $('#postNumber').val('');
+    $('#days').val('1');
+    $('#month').val('1.1');
+    $('#memberNumber').val('');
+
+    document.getElementById('memberNumber').disabled = false;
+    member = false;
+
+    alert("Suksess! Du har lagt inn en ordre! Vi gleder oss til å ha deg med på følget!");
+
+    //Return false to prevent page reload
+    return false;
 }

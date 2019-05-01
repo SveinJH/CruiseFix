@@ -11,6 +11,18 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="resources/favicons/site.webmanifest">
+        <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
     </head>
     <body>
         
@@ -18,7 +30,7 @@
         
             <nav>
                 <div class="row">
-                    <img src="resources/img/cruiseFix.PNG" class="logo">
+                    <img src="resources/img/cruiseFix.PNG" alt="CruiseFix logo" class="logo">
                     <ul class="main-nav js-main-nav">
                         <li class="js-scroll-to-hiw"><a href="#">Hvordan det virker</a></li>
                         <li class="js-scroll-to-order"><a href="#">Bestill</a></li>
@@ -208,7 +220,7 @@
             <div class="row">
                 <h2 class="activities__heading">Aktiviteter</h2>
                 <p class="activities-text">Ombord i v&aring;re skip finnes det aktiviteter for b&aring;de store og sm&aring;! Her er at par av tingene du kan finne p&aring; dersom du bestiller ferien din hos oss!</p>
-
+            </div>
             <div class="row js-wp-4">
                 <div class="col span-1-of-4 nutrition">
                     <i class="ion-ios-nutrition icon-big"></i>
@@ -343,7 +355,7 @@
                 <h2 class="order__heading">Bestill n&aring;</h2>
             </div>
             <div class="row">
-                <form method="post" action="#" name="orderForm" class="order__form" onsubmit="submitForm();"
+                <form method="post" action="#" name="orderForm" class="order__form" onsubmit="return submitForm();">
                     <div class="row order__row">
                         <div class="col span-1-of-4">
                             <label for="firstName">Fornavn<span class="required">*</span></label>
@@ -403,7 +415,7 @@
                             <input type="text" name="address" id="address" placeholder="Adresse" required>
                         </div>
                         <div class="col span-1-of-4">
-                            <label for="">Antall reisende<span class="required">*</span></label>
+                            <label for="peopleNumber">Antall reisende<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
                             <select name="peopleNumber" id="peopleNumber">
@@ -453,7 +465,7 @@
                             <label for="days">Antall reised&oslash;gn<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
-                            <select name="days" id="days" required>
+                            <select name="days" id="days">
                                 <option value="1" selected>1</option>
                                 <option value="1.8">2</option>
                                 <option value="2.55">3</option>
@@ -475,7 +487,7 @@
                             <label for="month">M&aring;ned<span class="required">*</span></label>
                         </div>
                         <div class="col span-1-of-4">
-                            <select name="month" id="month" required>
+                            <select name="month" id="month">
                                 <option value="1.1">Januar</option>
                                 <option value="1.15">Februar</option>
                                 <option value="1.2">Mars</option>
@@ -564,7 +576,7 @@
         </section>
 
 
-        <section class="section-footer">
+        <footer class="section-footer">
             <div class="row">
                 <ul class="footer__bar">
                     <li class="footer__bar-element js-scroll-to-about"><a href="#">Om oss</a></li>
@@ -588,7 +600,7 @@
             <div class="row">
                 <p class="footer__copyright">Copyright © 2019 laget av Svein Jakob H&oslash;ie og Marcus Sevaldsen</p>
             </div>
-        </section>
+        </footer>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>

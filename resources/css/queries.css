@@ -1,3 +1,9 @@
+
+/*
+Dette er spørringer som gjør det til en responsiv nettside, som endrer seg etter størrelsen på skjermen til brukeren.
+*/
+
+
 /*---------------------*/
 /* BIG TABLET TO 1200PX */
 /*---------------------*/
@@ -99,7 +105,7 @@
 
     /*ROUTES*/
     .route__text {
-        margin: 0 
+        margin: 0; 
         line-height: 136%;
     }
 
@@ -121,7 +127,10 @@
 
     /*CONTACT*/
     .contact__box {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .contact__box-1 {
