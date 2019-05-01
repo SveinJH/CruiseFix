@@ -379,5 +379,7 @@ Dette er spørringer som gjør det til en responsiv nettside, som endrer seg ett
 /*---------------------*/
 
 @media only screen and (max-width: 480px) {
-    
+    .steps-box:first-child {
+        margin-top: 100px;
+    }
 }
