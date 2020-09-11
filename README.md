@@ -1,3 +1,3 @@
 # CruiseFix
-
-### Project done in correlation with the course "Webdevelopment" at NTNU.
+ 
+ Project done in correlation with the course "Webdevelopment" at NTNU.
